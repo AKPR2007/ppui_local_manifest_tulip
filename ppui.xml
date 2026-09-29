@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="lineageos-org" fetch="https://github.com/lineageos" revision="lineage-18.1" />
+    <remote name="akpr" fetch="https://github.com/AKPR2007" revision="11" />
+    <remote name="okta10" fetch="https://github.com/okta-10" revision="mystic-eol" />
+
+    <!--Hardware Repo-->
+    <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="lineageos-org" />
+    
+    <!--dt-->
+    <project name="ppui_device_xiaomi_tulip-common" path="device/xiaomi/sdm660-common" remote="akpr"/>
+    <project name="ppui_device_xiaomi_tulip" path="device/xiaomi/twolip" remote="akpr"/>
+
+    <!--Vendor Tree-->
+    <project name="ppui_vendor_xiaomi_tulip-common" path="vendor/xiaomi/sdm660-common" remote="akpr"/>
+    <project name="ppui_vendor_xiaomi_tulip" path="vendor/xiaomi/twolip" remote="akpr" />
+    
+    <!--Kernel tree-->
+    <project name="mystic_kernel_sdm660-4.4" path="kernel/xiaomi/sdm660" remote="okta10" />
+</manifest>
